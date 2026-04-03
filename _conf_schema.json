@@ -1,0 +1,49 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "是否启用续标识",
+    "default": true
+  },
+  "emoji_id": {
+    "type": "string",
+    "description": "表情 ID（优先级最高）",
+    "hint": "例如 76 表示赞；如果填了这个，就忽略 emoji_name",
+    "default": "76"
+  },
+  "emoji_name": {
+    "type": "string",
+    "description": "表情名称或单个 Emoji 字符",
+    "hint": "例如：赞、比心、庆祝、👍",
+    "default": ""
+  },
+  "enable_group": {
+    "type": "bool",
+    "description": "是否在群聊中生效",
+    "default": true
+  },
+  "enable_private": {
+    "type": "bool",
+    "description": "是否在私聊中生效",
+    "default": false
+  },
+  "group_whitelist": {
+    "type": "list",
+    "description": "群白名单（留空表示所有群都生效）",
+    "default": []
+  },
+  "user_blacklist": {
+    "type": "list",
+    "description": "用户黑名单（这些人发消息不会触发）",
+    "default": []
+  },
+  "keyword_only": {
+    "type": "bool",
+    "description": "是否只对包含关键词的消息打续标识",
+    "default": false
+  },
+  "keywords": {
+    "type": "list",
+    "description": "关键词列表",
+    "default": []
+  }
+}
