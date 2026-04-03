@@ -1,0 +1,6 @@
+name: "auto_button"
+author: "我自己"
+desc: "别人发消息，自动回复按按钮表情包"
+version: "1.0.0"
+platform:
+  - aiocqhttp
